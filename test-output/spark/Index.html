@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 27, 2024 11:27:21 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 9, 2024 06:49:46 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,33 +79,33 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@smoke</a>
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
-          <div class="status-avatar skip-bg">
-            <i class="fa fa-long-arrow-right text-white"></i>
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
           </div>
           <div class="test-detail">
             <span class="meta text-white badge badge-sm"></span>
-            <p class="name">Demo Tool Shop</p>
-            <p class="text-sm"><span>23:27:22 pm</span> / <span>33.5 secs</span></p>
+            <p class="name">Demo Web Shop</p>
+            <p class="text-sm"><span>18:49:46 pm</span> / <span>59.743 secs</span></p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
 <div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
-<h5 class="test-status text-skip">Demo Tool Shop</h5>
-<span class='badge badge-success'>06.27.2024 23:27:22</span>
-<span class='badge badge-danger'>06.27.2024 23:27:55</span>
-<span class='badge badge-default'>33.5 secs</span>
+<h5 class="test-status text-pass">Demo Web Shop</h5>
+<span class='badge badge-success'>07.09.2024 18:49:46</span>
+<span class='badge badge-danger'>07.09.2024 18:50:46</span>
+<span class='badge badge-default'>59.743 secs</span>
 </div>
 </div>
 </div>
@@ -113,10 +113,215 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log skip-bg mr-2">Skip</span>Register should be successful</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login should be successful</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="LoginPage.userClicksOnTheLoginButton()">
+                <span>Given user clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldEnterAEmail(String)">
+                <span>And user should enter a email "dheemegam002@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAPasswordAs(String)">
+                <span>And user should enter a password as "Dineshdk@08"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClicksARememberMeCheckBox()">
+                <span>And user should clicks a remember me check box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClickTheLoginButton()">
+                <span>When user should click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldLoginIntoTheAccount()">
+                <span>Then user should login into the account</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Login should fail due to wrong email and password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="LoginPage.userClicksOnTheLoginButton()">
+                <span>Given user clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldEnterAEmail(String)">
+                <span>And user should enter a email "dinesh002@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAPasswordAs(String)">
+                <span>And user should enter a password as "Dinesh"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClicksARememberMeCheckBox()">
+                <span>And user should clicks a remember me check box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClickTheLoginButton()">
+                <span>When user should click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldFailToLoginIntoTheAccountDueToWrongEmailAndPassword()">
+                <span>But user should fail to login into the account due to wrong email and password</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Login should fail due to wrong email</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="LoginPage.userClicksOnTheLoginButton()">
+                <span>Given user clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldEnterAEmail(String)">
+                <span>And user should enter a email "dheemegam002"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAPasswordAs(String)">
+                <span>And user should enter a password as "Dineshdk@08"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClicksARememberMeCheckBox()">
+                <span>And user should clicks a remember me check box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClickTheLoginButton()">
+                <span>When user should click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldFailToLoginIntoTheAccountDueToWrongEmail()">
+                <span>But user should fail to login into the account due to wrong email</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Login should fail due to the wrong password</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="LoginPage.userClicksOnTheLoginButton()">
+                <span>Given user clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldEnterAEmail(String)">
+                <span>And user should enter a email "dheemegam002@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAPasswordAs(String)">
+                <span>And user should enter a password as "Dineshdk"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClicksARememberMeCheckBox()">
+                <span>And user should clicks a remember me check box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClickTheLoginButton()">
+                <span>When user should click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldFailToLoginIntoTheAccountDueToWrongPassword()">
+                <span>But user should fail to login into the account due to wrong password</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Login should fail due to the both email and password as empty</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="LoginPage.userClicksOnTheLoginButton()">
+                <span>Given user clicks on the Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldEnterAEmail(String)">
+                <span>And user should enter a email ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAPasswordAs(String)">
+                <span>And user should enter a password as ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClicksARememberMeCheckBox()">
+                <span>And user should clicks a remember me check box</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldClickTheLoginButton()">
+                <span>When user should click the login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="LoginPage.userShouldFailToLoginIntoTheAccountDueToBothEmailAndPasswordAsEmpty()">
+                <span>But user should fail to login into the account due to both email and password as empty</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="47"><span class="badge log pass-bg mr-2">Pass</span>Register should be successful</div>
+      </div>
+    </div>
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="RegisterPage.userClicksOnTheRegisterButton()">
                 <span>Given user clicks on the Register button</span>
@@ -138,8 +343,8 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="RegisterPage.userShouldEnterTheEmailAs(String)">
-                <span>And user should enter the email as "dheemegam002@gmail.com"</span>
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterARandomEmail()">
+                <span>And user should enter a random email</span>
       <div>
       </div>
               </div>
@@ -148,19 +353,19 @@
       <div>
       </div>
               </div>
-              <div class="step skip-bg" >
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAConfirmPassword(String)">
                 <span>And user should enter a confirm password "Dineshdk@08"</span>
-      <div>Step undefined
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.userShouldClickARegisterButton()">
+              <div class="step pass-bg" title="RegisterPage.userShouldClickARegisterButton()">
                 <span>When user clicks the Register button</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.loginShouldBeSuccessful()">
-                <span>Then login should be successful</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="RegisterPage.loginShouldBeSuccessful()">
+                <span>Then Register should be successful</span>
+      <div>
       </div>
               </div>
           </div>
@@ -169,10 +374,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="14"><span class="badge log skip-bg mr-2">Skip</span>Register should fail due to wrong email</div>
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Register should fail due to wrong email</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="RegisterPage.userClicksOnTheRegisterButton()">
                 <span>Given user clicks on the Register button</span>
@@ -204,19 +409,19 @@
       <div>
       </div>
               </div>
-              <div class="step skip-bg" >
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAConfirmPassword(String)">
                 <span>And user should enter a confirm password "Dineshdk@08"</span>
-      <div>Step undefined
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.userShouldClickARegisterButton()">
+              <div class="step pass-bg" title="RegisterPage.userShouldClickARegisterButton()">
                 <span>When user clicks the Register button</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.loginShouldFailDueToWrongEmail()">
-                <span>But login should fail due to wrong email</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="RegisterPage.loginShouldFailDueToWrongEmail()">
+                <span>But Register should fail due to wrong email</span>
+      <div>
       </div>
               </div>
           </div>
@@ -225,10 +430,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="26"><span class="badge log skip-bg mr-2">Skip</span>Register should fail due to wrong password</div>
+        <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>Register should fail due to wrong password</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="RegisterPage.userClicksOnTheRegisterButton()">
                 <span>Given user clicks on the Register button</span>
@@ -260,19 +465,19 @@
       <div>
       </div>
               </div>
-              <div class="step skip-bg" >
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAConfirmPassword(String)">
                 <span>And user should enter a confirm password "Dinesh"</span>
-      <div>Step undefined
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.userShouldClickARegisterButton()">
+              <div class="step pass-bg" title="RegisterPage.userShouldClickARegisterButton()">
                 <span>When user clicks the Register button</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.loginShouldFailDueToWrongPassword()">
-                <span>But login should fail due to wrong password</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="RegisterPage.loginShouldFailDueToWrongPassword()">
+                <span>But Register should fail due to wrong password</span>
+      <div>
       </div>
               </div>
           </div>
@@ -281,10 +486,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="38"><span class="badge log skip-bg mr-2">Skip</span>Register should fail due to both wrong email and password</div>
+        <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>Register should fail due to both wrong email and password</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="RegisterPage.userClicksOnTheRegisterButton()">
                 <span>Given user clicks on the Register button</span>
@@ -316,19 +521,19 @@
       <div>
       </div>
               </div>
-              <div class="step skip-bg" >
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAConfirmPassword(String)">
                 <span>And user should enter a confirm password "Dinesh"</span>
-      <div>Step undefined
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.userShouldClickARegisterButton()">
+              <div class="step pass-bg" title="RegisterPage.userShouldClickARegisterButton()">
                 <span>When user clicks the Register button</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.loginShouldFailDueToBothWrongEmailAndPassword()">
-                <span>But login should fail due to both wrong email and password</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="RegisterPage.loginShouldFailDueToBothWrongEmailAndPassword()">
+                <span>But Register should fail due to both wrong email and password</span>
+      <div>
       </div>
               </div>
           </div>
@@ -337,10 +542,10 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="50"><span class="badge log skip-bg mr-2">Skip</span>Register should fail due to both email and password being empty</div>
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Register should fail due to both email and password being empty</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="RegisterPage.userClicksOnTheRegisterButton()">
                 <span>Given user clicks on the Register button</span>
@@ -353,12 +558,12 @@
       </div>
               </div>
               <div class="step pass-bg" title="RegisterPage.userShouldEnterAFirstName(String)">
-                <span>And user should enter a first name "Dinesh Kumar"</span>
+                <span>And user should enter a first name ""</span>
       <div>
       </div>
               </div>
               <div class="step pass-bg" title="RegisterPage.userShouldEnterALastName(String)">
-                <span>And user should enter a last name "k"</span>
+                <span>And user should enter a last name ""</span>
       <div>
       </div>
               </div>
@@ -372,19 +577,19 @@
       <div>
       </div>
               </div>
-              <div class="step skip-bg" >
+              <div class="step pass-bg" title="RegisterPage.userShouldEnterAConfirmPassword(String)">
                 <span>And user should enter a confirm password ""</span>
-      <div>Step undefined
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.userShouldClickARegisterButton()">
+              <div class="step pass-bg" title="RegisterPage.userShouldClickARegisterButton()">
                 <span>When user clicks the Register button</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="RegisterPage.loginShouldFailDueToBothEmailAndPasswordBeingEmpty()">
-                <span>But login should fail due to both email and password being empty</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="RegisterPage.loginShouldFailDueToBothEmailAndPasswordBeingEmpty()">
+                <span>But Register should fail due to both email and password being empty</span>
+      <div>
       </div>
               </div>
           </div>
@@ -413,15 +618,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>1</span>
+<span class='badge log pass-bg'>4</span>
 </span>
-<p class="name">@regression</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@smoke</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@regression</h4>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -432,13 +637,43 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>23:27:29 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:49:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>Register should fail due to wrong email</a>
+<a href="#" class="linked" test-id='1' id='2'>Login should be successful</a>
 <div class="">
-<span class="badge badge-default">Demo Tool Shop.Register should fail due to wrong email</span>
+<span class="badge badge-default">Demo Web Shop.Login should be successful</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:49:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Login should fail due to wrong email and password</a>
+<div class="">
+<span class="badge badge-default">Demo Web Shop.Login should fail due to wrong email and password</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:50:13 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Register should be successful</a>
+<div class="">
+<span class="badge badge-default">Demo Web Shop.Register should be successful</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:50:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>Register should fail due to wrong email</a>
+<div class="">
+<span class="badge badge-default">Demo Web Shop.Register should fail due to wrong email</span>
 </div>
 </td>
 </tr>
@@ -449,15 +684,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>2</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@smoke</p>
+<p class="name">@regression</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@smoke</h4>
-<span status="skip" class='badge log badge-skip'>2 skipped</span>
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -468,23 +703,23 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>23:27:22 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:49:53 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Register should be successful</a>
+<a href="#" class="linked" test-id='1' id='11'>Login should fail due to wrong email and password</a>
 <div class="">
-<span class="badge badge-default">Demo Tool Shop.Register should be successful</span>
+<span class="badge badge-default">Demo Web Shop.Login should fail due to wrong email and password</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>23:27:29 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:50:19 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='14'>Register should fail due to wrong email</a>
+<a href="#" class="linked" test-id='1' id='59'>Register should fail due to wrong email</a>
 <div class="">
-<span class="badge badge-default">Demo Tool Shop.Register should fail due to wrong email</span>
+<span class="badge badge-default">Demo Web Shop.Register should fail due to wrong email</span>
 </div>
 </td>
 </tr>
@@ -514,19 +749,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 27, 2024 11:27:21 pm</h3>
+<h3>Jul 9, 2024 06:49:46 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 27, 2024 11:27:56 pm</h3>
+<h3>Jul 9, 2024 06:50:46 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -548,13 +783,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> features failed,
-<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -571,10 +806,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>10</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
-<b>5</b> skipped, <b data-tooltip='%'>0</b> others
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -591,10 +826,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'><b>30</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>75</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
-<b>15</b> skipped, <b data-tooltip='%'>0</b> others
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -608,20 +843,20 @@
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@regression</td>
+<td>@smoke</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
-<td>1</td>
 <td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 <tr>
-<td>@smoke</td>
-<td>0</td>
-<td>0</td>
+<td>@regression</td>
 <td>2</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -632,21 +867,21 @@
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 1,
 failParent: 0,
 warningParent: 0,
-skipParent: 1,
+skipParent: 0,
 childCount: 5,
-passChild: 0,
+passChild: 10,
 failChild: 0,
 warningChild: 0,
-skipChild: 5,
+skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 30,
+passGrandChild: 75,
 failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 15,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };

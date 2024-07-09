@@ -5,7 +5,7 @@ import cucumber.api.SnippetType;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-  features = "src/test/java/features/Register.feature", 
+  features = "src/test/java/features", 
   dryRun=false,
   glue = {"hooks","Pages"},		
   snippets=SnippetType.CAMELCASE,

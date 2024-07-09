@@ -85,28 +85,28 @@ public class RegisterPage  {
 	    context.getDriver().findElement(register_Button).click();
 	}
 
-	@Then("login should be successful")
+	@Then("Register should be successful")
 	public void loginShouldBeSuccessful() {
 	    String mail = context.getDriver().findElement(Assert_login_sucess).getText();
 	    Assert.assertEquals(randomEmail, mail);
 	}
 
-	@But("login should fail due to wrong email")
+	@But("Register should fail due to wrong email")
 	public void loginShouldFailDueToWrongEmail() {
 	    Assert.assertTrue(context.getDriver().findElement(Assert_login_failure_email).isDisplayed());
 	}
 	
-	@But("login should fail due to wrong password")
+	@But("Register should fail due to wrong password")
 	public void loginShouldFailDueToWrongPassword() {
 	    Assert.assertTrue(context.getDriver().findElement(Assert_login_failure_password).isDisplayed());
 	}
 
-	@But("login should fail due to both wrong email and password")
+	@But("Register should fail due to both wrong email and password")
 	public void loginShouldFailDueToBothWrongEmailAndPassword() {
 	    Assert.assertTrue(context.getDriver().findElement(Assert_login_failure_both).isDisplayed());
 	}
 
-	@But("login should fail due to both email and password being empty")
+	@But("Register should fail due to both email and password being empty")
 	public void loginShouldFailDueToBothEmailAndPasswordBeingEmpty() {
 	    Assert.assertTrue(context.getDriver().findElement(Assert_login_failure_empty).isDisplayed());
 	    Assert.assertTrue(context.getDriver().findElement(Assert_login_failure_empty_pass).isDisplayed());

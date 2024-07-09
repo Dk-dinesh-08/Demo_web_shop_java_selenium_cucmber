@@ -21,8 +21,9 @@ public class Hooks {
 		this.context=context;
 	}
  
+	
 	@Before
-	@Given ("user should navigate to the application")
+	 @Given("user should navigate to the application")
 	public void beforeScenario(Scenario scenario){
 		RemoteWebDriver driver = new ChromeDriver(); 
 		context.setDriver(driver);

@@ -12,7 +12,7 @@ Feature: Demo Web Shop
     And user should enter a password as "Dineshdk@08"
     And user should enter a confirm password "Dineshdk@08"
     When user clicks the Register button
-    Then login should be successful
+    Then Register should be successful
 
   @smoke @regression
   Scenario: Register should fail due to wrong email
@@ -23,7 +23,7 @@ Feature: Demo Web Shop
     And user should enter a password as "Dineshdk@08"
     And user should enter a confirm password "Dineshdk@08"
     When user clicks the Register button
-    But login should fail due to wrong email
+    But Register should fail due to wrong email
 
   Scenario: Register should fail due to wrong password
     And user should click the Gender option as male
@@ -33,7 +33,7 @@ Feature: Demo Web Shop
     And user should enter a password as "Dines"
     And user should enter a confirm password "Dinesh"
     When user clicks the Register button
-    But login should fail due to wrong password
+    But Register should fail due to wrong password
 
   Scenario: Register should fail due to both wrong email and password
     And user should click the Gender option as male
@@ -43,7 +43,7 @@ Feature: Demo Web Shop
     And user should enter a password as "Dines"
     And user should enter a confirm password "Dinesh"
     When user clicks the Register button
-    But login should fail due to both wrong email and password
+    But Register should fail due to both wrong email and password
 
   Scenario: Register should fail due to both email and password being empty
     And user should click the Gender option as male
@@ -53,4 +53,4 @@ Feature: Demo Web Shop
     And user should enter a password as ""
     And user should enter a confirm password ""
     When user clicks the Register button
-    But login should fail due to both email and password being empty
+    But Register should fail due to both email and password being empty
